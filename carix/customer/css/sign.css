@@ -1,0 +1,57 @@
+:root {
+    --first-color: #f8eee4;
+    --second-color: #e0d4c4;
+    --third-color: #d1b9aa;
+    --forth-color: #865770;
+    --fifth-color: #f1bc0d;
+}
+
+.up {
+    letter-spacing: 2px;
+    border: none;
+    width: 133px;
+    height: 47px;
+    margin-right: 19px;
+    border-radius: 23.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #85586f;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+.up:hover {
+    -webkit-animation-name: hvr-wobble-horizontal;
+    animation-name: hvr-wobble-horizontal;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.in {
+    color: var(--fifth-color);
+    font-weight: 500;
+}
+
+.form-login {
+    display: flex;
+    align-items: center;
+    margin-left: 23px;
+}
+
+p {
+    color: #808080;
+    text-align: center;
+    font-size: small;
+}

@@ -1,0 +1,184 @@
+:root {
+    --first-color: #f8eee4;
+    --second-color: #e0d4c4;
+    --third-color: #d1b9aa;
+    --forth-color: #865770;
+    --fifth-color: #f1bc0d;
+}
+
+/******************************* Service ********************************/
+.custom-card {
+    box-shadow: 14px 14px 43px 7px #0202461f;
+    background-color: #fff;
+    border: 1px solid #353740;
+    padding: 1.5rem !important;
+}
+
+.custom-card h4 {
+    color: var(--forth-color);
+}
+
+.border-gray {
+    border: solid 1px #d9d9d9;
+}
+
+.custom-card label:hover {
+    cursor: pointer !important;
+}
+
+input[type=checkbox]:checked {
+    background-color: var(--forth-color) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+}
+
+input[type='checkbox']:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+
+.info {
+    width: 25px;
+    height: 25px;
+    color: #353740;
+}
+
+.info:hover {
+    color: var(--fifth-color);
+    box-shadow: none !important;
+}
+
+.mechanic {
+    position: relative;
+    right: 100%;
+}
+
+.border-purple {
+    border: solid 1px var(--forth-color) !important;
+    background-color: transparent !important;
+}
+
+.carSelected {
+    background-color: var(--forth-color);
+}
+
+.carSelected:hover {
+    color: var(--fifth-color) !important;
+    box-shadow: none !important;
+}
+
+label span {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--fifth-color);
+}
+
+.checkPrice {
+    font-weight: 400;
+    color: #353740;
+}
+
+.checkBtn {
+    background-color: var(--forth-color);
+    color: white;
+    font-weight: 500;
+}
+
+.checkBtn:hover {
+    background-color: var(--first-color);
+    color: var(--forth-color);
+    box-shadow: none !important;
+}
+
+@media (max-width:992px) {
+    .vertical {
+        padding-top: 5%;
+    }
+}
+
+/******************************* Pop ********************************/
+.step2 .button {
+    transition: all 0.3s ease-out;
+}
+
+.step2 .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.step2 .overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.step2  .popup span {
+    color: var(--forth-color);
+}
+
+.step2  .popup {
+    margin: 10% auto;
+    padding: 20px;
+    background: #fff !important;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all  ease-in-out;
+}
+
+.step2  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.step2  .popup .close:hover {
+    color: #06D85F;
+}
+
+.step2 .popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .step2  .box {
+        width: 70%;
+    }
+
+    .step2  .popup {
+        width: 70%;
+    }
+}
+
+/******************************* Radio ********************************/
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -3px;
+    left: -1px;
+    position: relative;
+    background-color: var(--forth-color);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+/******************************* Line ********************************/
+.line{
+    color: var(--fifth-color);
+}

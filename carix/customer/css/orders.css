@@ -1,0 +1,66 @@
+:root {
+    --first-color: #f8eee4;
+    --second-color: #e0d4c4;
+    --third-color: #d1b9aa;
+    --forth-color: #865770;
+    --fifth-color: #f1bc0d;
+}
+
+.image-holder img {
+    max-width: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.inner {
+    margin: auto;
+    display: flex;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 900px;
+}
+
+.myOrder form {
+    width: 50%;
+    padding-top: 37px;
+    padding-right: 60px;
+    padding-left: 15px;
+}
+
+.myOrder h3 {
+    margin-top: 40px;
+    font-size: 35px;
+    font-family: "ElMessiri-SemiBold";
+    text-align: center;
+    margin-bottom: 27px;
+    color: #85586f;
+}
+
+@media (max-width: 767px) {
+    .forms form {
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+.status {
+    color: var(--forth-color);
+}
+
+.sort {
+    background-color: var(--forth-color) !important;
+    color: white !important;
+    width: 20%;
+}
+
+.sort:hover {
+    color: var(--fifth-color) !important;
+    font-weight: 700 !important;
+    box-shadow: none !important;
+}

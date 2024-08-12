@@ -1,0 +1,206 @@
+:root {
+    --first-color: #f8eee4;
+    --second-color: #e0d4c4;
+    --third-color: #d1b9aa;
+    --forth-color: #865770;
+    --fifth-color: #f1bc0d;
+}
+
+.view i {
+    color: var(--forth-color);
+}
+
+.view i:hover {
+    color: var(--fifth-color);
+}
+
+.view button:hover {
+    box-shadow: none !important;
+}
+
+.addIcon button {
+    background-color: var(--first-color);
+    font-weight: 500;
+}
+
+.addIcon button:hover {
+    color: var(--forth-color);
+    font-weight: 700;
+}
+
+input:focus-visible {
+    border: 1px solid var(--fifth-color) !important;
+    outline: none !important;
+}
+
+.form-select:focus {
+    border-color: var(--fifth-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.view input[type=text] {
+    padding: 6px;
+    width: 300px;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+}
+
+.search-container button {
+    position: relative;
+    right: 40px;
+    background: transparent;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #BBBEBF;
+}
+
+.view table {
+    width: 100%;
+}
+
+.view th,
+.view td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.appointment th,
+.appointment td {
+    border: 2px double var(--third-color);
+}
+
+.view tr th:first-child,
+.view tr td:first-child {
+    padding-left: 15px;
+}
+
+.view th {
+    text-align: left;
+    background-color: var(--forth-color);
+    color: white;
+}
+
+.view tr {
+    border: 1px solid var(--forth-color);
+}
+
+.view tr:hover {
+    background-color: var(--first-color);
+    cursor: default;
+}
+
+.serviceName {
+    width: 22%;
+}
+
+.product .serviceName,
+.reason {
+    width: 14%;
+}
+
+.reason {
+    word-break: break-word;
+}
+
+.appointment .serviceName {
+    width: 15%;
+}
+
+.content {
+    width: 35%;
+}
+
+.product .content {
+    width: 10%;
+}
+
+.status button {
+    background-color: var(--forth-color);
+    color: var(--first-color);
+    font-weight: 500;
+}
+
+.status button:hover {
+    color: var(--fifth-color);
+    font-weight: 700;
+}
+
+.small {
+    width: 4%;
+}
+
+.order table,
+.order #viewTable {
+    font-size: 14px;
+}
+
+.order td,
+.appTable td,
+.appTable th {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.carBrand {
+    table-layout: fixed;
+}
+
+.carBrand img {
+    width: 20%;
+}
+
+.table-responsive {
+    overflow-x: auto !important;
+}
+
+table {
+    overflow-x: auto !important;
+}
+
+
+.order th {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+@media (max-width:1330px) {
+
+    .order,
+    .addIcon button,
+    #viewTable {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width:770px) {
+
+    .order,
+    .order #viewTable {
+        font-size: 8px !important;
+    }
+}
+
+@media (max-width:767px) {
+    .search-container button {
+        right: 13%;
+    }
+
+    .view input[type=text] {
+        padding: 5px;
+        width: 180px;
+    }
+}
+
+@media (max-width:550px) {
+    .search-container button {
+        right: 18%;
+    }
+
+    .view input[type=text] {
+        padding: 5px;
+        width: 120px;
+    }
+}

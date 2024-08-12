@@ -1,0 +1,137 @@
+:root {
+    --first-color: #f8eee4;
+    --second-color: #e0d4c4;
+    --third-color: #d1b9aa;
+    --forth-color: #865770;
+    --fifth-color: #f1bc0d;
+}
+
+.multiSteps img {
+    float: inline-end;
+}
+
+form h3 {
+    color: var(--forth-color);
+}
+
+.selectForm {
+    padding-right: 20% !important;
+}
+
+.form-select:focus,
+.form-control:focus {
+    border-color: var(--fifth-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.multiSteps .usualForm input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    background: transparent;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #999;
+}
+
+.btn-box p a {
+    color: var(--fifth-color);
+}
+
+.multiSteps .btn-box button {
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background-color: var(--forth-color);
+    color: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.multiSteps .btn-box button:hover,
+.paymentBtn:hover {
+    box-shadow: none !important;
+    color: var(--fifth-color);
+    font-weight: 600;
+    background-color: var(--forth-color);
+}
+
+.multiSteps button:hover {
+    box-shadow: none !important;
+}
+
+.discount {
+    color: var(--fifth-color);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.input-group button {
+    background-color: var(--first-color);
+}
+
+.input-group button:hover {
+    color: var(--forth-color);
+    background-color: var(--first-color);
+}
+
+.wallet {
+    color: var(--fifth-color);
+}
+
+.paymentBtn {
+    background-color: var(--forth-color);
+    color: white;
+}
+
+@media (max-width:971px) {
+    .selectForm {
+        padding-right: 0% !important;
+    }
+}
+
+@media (max-width:581px) {
+    .selectForm {
+        padding-right: 5% !important;
+    }
+}
+
+/*! ****************************** Mobile Number ******************************/
+.mobile .form-control {
+    border: 1px solid var(--forth-color) !important;
+}
+
+/*! ****************************** OTP ******************************/
+.otp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp input{
+    width: 20% !important;
+    padding: 0% !important;
+}
+
+.input {
+    width: 40px;
+    border: none;
+    border-bottom: 1px solid var(--forth-color) !important;
+    text-align: center;
+    font-size: 36px;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.input:focus {
+    border-bottom: 2px solid var(--fifth-color) !important;
+    outline: none;
+}
+
+.input:nth-child(1) {
+    cursor: pointer;
+    pointer-events: all !important;
+}

@@ -1,0 +1,74 @@
+:root {
+    --first-color: #f8eee4;
+    --second-color: #e0d4c4;
+    --third-color: #d1b9aa;
+    --forth-color: #865770;
+    --fifth-color: #f1bc0d;
+}
+
+.form-select:focus,
+.form-control:focus {
+    border-color: var(--fifth-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+.image-holder img {
+    max-width: 100%;
+}
+
+:focus {
+    outline: none;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.inner {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.forms form {
+    padding-top: 77px;
+    padding-right: 60px;
+    padding-left: 15px;
+}
+
+.forms h3 {
+    font-size: 35px;
+    font-family: "ElMessiri-SemiBold";
+    text-align: center;
+    color: var(--forth-color);
+}
+
+.form-holder {
+    padding-left: 24px;
+    position: relative;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .25rem var(--forth-color);
+}
+
+.gaStation li {
+    font-weight: 700;
+}
+
+.gaStation li a {
+    color: var(--forth-color);
+    font-weight: 500 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--fifth-color) !important;
+}
+
+@media (max-width: 767px) {
+    .forms form {
+        margin: 0%;
+        padding: 0%;
+    }
+}

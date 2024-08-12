@@ -1,0 +1,201 @@
+:root {
+    --first-color: #f8eee4;
+    --second-color: #e0d4c4;
+    --third-color: #d1b9aa;
+    --forth-color: #865770;
+    --fifth-color: #f1bc0d;
+}
+
+@font-face {
+    font-family: "ElMessiri-SemiBold";
+    src: url("../fonts/el_messiri/ElMessiri-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../fonts/montserrat/Montserrat-SemiBold.ttf");
+}
+
+.welcome {
+    font-size: x-large;
+    font-family: "Montserrat-SemiBold";
+}
+
+.image-holder img {
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+:focus {
+    outline: none;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.inner {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 900px;
+}
+
+.account form {
+    width: 50%;
+    padding-top: 77px;
+    padding-right: 60px;
+    padding-left: 10%;
+}
+
+.account h3 {
+    font-size: 35px;
+    font-family: "ElMessiri-SemiBold";
+    text-align: center;
+    color: var(--forth-color);
+}
+
+@-webkit-keyframes hvr-wobble-horizontal {
+    16.65% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    33.3% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+
+    49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+
+    66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+
+    83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes hvr-wobble-horizontal {
+    16.65% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    33.3% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+
+    49.95% {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+
+    66.6% {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+
+    83.25% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.account button,
+.logout,
+.logout a {
+    letter-spacing: 2px;
+    width: 230px;
+    height: 47px;
+    border-radius: 15.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--forth-color);
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Montserrat-SemiBold";
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.account button:hover,
+.logout:hover {
+    -webkit-animation-name: hvr-wobble-horizontal;
+    animation-name: hvr-wobble-horizontal;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+.buttmain {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 38px;
+    width: 100px;
+}
+
+.butt,
+.logout {
+    display: flex;
+    align-items: center;
+    margin-left: 38px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.account hr {
+    border: 0;
+    border-top: 1px solid;
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .account form {
+        text-align: center;
+        padding: 0%;
+        width: 100%;
+    }
+
+    .hello {
+        font-size: larger !important;
+    }
+}
